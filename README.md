@@ -2,11 +2,11 @@
 >基于react，webpack，apicloud同时构建ios，android，wap端的应用框架，根据不同打包命令，引用不同库文件，最终输出适合不同平台的应用
 
 ## 演示
-https://github.com/daihanqiao/react-hybrid
-或安装项目后访问`./dev/html/example.html`
+下载项目后访问`./dev/html/example.html`
+
 ## 使用
 ### 安装依赖库
-运行环境：Windows
+运行环境：Windows，（Linux和Mac需要修改package.json下scripts中设置环境变量的命令如：`set NODE_ENV=release`=>`env NODE_ENV=release`，以及脚本路径`\\`=>`/`
 
 安装：nodejs
 
