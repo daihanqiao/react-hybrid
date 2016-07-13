@@ -147,3 +147,8 @@ app端说明：
 
 > **timing**：计时器工具，使用方法见`timing`源码示例
 
+## 关于作者
+* 个人博客：http://daihanqiao.github.io/
+* 邮件：daihanqiao@126.com
+* QQ: 935483576
+
