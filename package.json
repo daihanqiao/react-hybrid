@@ -1,0 +1,45 @@
+{
+  "name": "react-hybrid",
+  "version": "1.0.0",
+  "description": "APP",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "classnames": "^2.2.3",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "fastclick": "^1.0.6",
+    "file-loader": "^0.8.5",
+    "jsx-loader": "^0.13.2",
+    "lory.js": "^2.0.1",
+    "mockjs": "^1.0.0",
+    "node-sass": "^3.4.2",
+    "notie": "^2.1.0",
+    "pubsub-js": "^1.5.3",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "reqwest": "^2.0.5",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-shell-plugin": "^0.4.2"
+  },
+  "scripts": {
+    "dev": "set NODE_ENV=dev&webpack --progress --colors&echo 'dev'",
+    "release": "set NODE_ENV=release&webpack -p --progress --colors&echo 'release'",
+    "watch": "set NODE_ENV=dev&webpack --progress --colors -w&echo 'watch'",
+    "page": "set NODE_PAGE=page&node .\\bin\\createPage.js",
+    "release-gzip": "set NODE_ENV=release&set NODE_GZIP=1&webpack -p --progress --colors&echo 'release-gzip'",
+    "release-app": "set NODE_ENV=release&set NODE_APP=1&webpack -p --progress --colors&echo 'release-app'&node .\\bin\\copyFiles.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react","hybrid","webpack","apicloud"
+  ],
+  "author": "daihanqiao@126.com",
+  "license": "ISC"
+}

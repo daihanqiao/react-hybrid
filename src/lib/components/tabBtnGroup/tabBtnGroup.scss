@@ -1,0 +1,40 @@
+@import '../../base/css/globalStyle';
+.tabBtnGroup{
+    overflow: hidden;
+    .segmented-control {
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+        font-weight: 400;
+        position: relative;
+        display: table;
+        overflow: hidden;
+        width: 100%;
+        table-layout: fixed;
+        background-color: transparent;
+        -webkit-touch-callout: none;
+        .item {
+            line-height: pxToRem(38px);;
+            display: table-cell;
+            overflow: hidden;
+            width: 1%;
+            font-size: pxToRem(13px);
+            -webkit-transition: background-color .1s linear;
+            transition: background-color .1s linear;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: $mainColor;
+            border-color: $mainColor;
+            border-left: 1px solid $mainColor;
+            color: inherit;
+            border: 0;
+            &.active{
+                color:$mainColor;
+            }
+        }
+    }
+    .line{
+        background-color: $mainColor;
+    }
+}

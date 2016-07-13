@@ -1,0 +1,68 @@
+@import "../../base/css/globalStyle";
+.foldItem{
+	.fold-group{
+		position: relative;
+		.fold-conent{
+			padding:10px 15px;
+			display: none;
+			p,span{
+			    color: #333;
+				margin-bottom: 0;
+				word-break: break-all;
+				word-wrap: break-word;
+			}
+			& > img{
+				width: 100%;
+			}
+		}
+		&.noLine{
+			.fold-menu{
+				&:after{
+					background-color: transparent;
+				}
+			}
+		}
+		&.open{
+			.msg-tips{
+				display: none;
+			}
+			.base-iconUp{
+				&:after{
+					-webkit-transform: translateY(-50%) rotate(135deg);
+					transform: translateY(-50%) rotate(135deg);
+				}
+			}
+			.fold-conent{
+				display: block;
+			    font-size: pxToRem(14px);
+			}
+		}
+	}
+	.fold-menu{
+		padding:11px 15px;
+		position: relative;
+		overflow: hidden;
+		background-color: #fff;
+	    font-size: pxToRem(15px);
+	    .msgTitle{
+			margin-left: 15px;
+		}
+		.msg-tips{
+			&:after{
+				content:" ";
+				position: absolute;
+				left: 18px;
+				top: 18px;
+				width: 8px;
+				height: 8px;
+				background-color: #e50111;
+				border-radius: 50%;
+			}
+		}
+	}
+	&:last-of-type{
+		.fold-menu:after{
+			height: 0px;
+		}
+	}
+}

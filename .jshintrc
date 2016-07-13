@@ -1,0 +1,18 @@
+{
+    "eqeqeq": true,
+    "indent": true,
+    "latedef": "nofunc",
+    "newcap": true,
+    "undef": true,
+    "strict":true,
+    "lastsemic": true,
+    "sub": true,
+    "curly": true,
+    "devel": true,
+    "evil": true,
+    "node": true,
+    "browser": true,
+    "bitwise": false,
+    "forin": true,
+    "predef": ["React","ReactDOM","Com","Base","define","__DEBUG__","__CONFIG__","api","escape","unescape","__SHARE_SDK__","__LOGIN_SDK__","__PAY_SDK__","__MAIN__"]
+}

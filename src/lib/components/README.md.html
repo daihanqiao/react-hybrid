@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgba(245, 235, 198, 0.8); overflow: auto; background-color: rgb(40, 40, 40); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgba(255, 255, 255, 0.8); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgba(255, 255, 255, 0.8); }
+.markdown-preview:not([data-use-github-style]) del { color: rgba(233, 211, 129, 0.8); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(252, 249, 227); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgba(233, 211, 129, 0.8); border-color: rgb(81, 81, 81); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(81, 81, 81); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgba(255, 255, 255, 0.8); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(81, 81, 81); }
+.markdown-preview:not([data-use-github-style]) code { color: rgba(255, 255, 255, 0.8); background-color: rgb(60, 60, 60); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(50, 50, 50); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgba(255, 255, 255, 0.8); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(81, 81, 81) rgb(81, 81, 81) rgb(66, 66, 66); background-color: rgb(60, 60, 60); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.markdown-preview { color: rgba(245, 235, 198, 0.8); background-color: rgb(45, 45, 45); }
+.markdown-preview code { color: rgba(245, 235, 198, 0.8); background-color: rgb(50, 50, 50); }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3 { border-color: rgba(245, 235, 198, 0.0980392); }
+.markdown-preview table tr { border-color: rgb(66, 66, 66); background: none; }
+.markdown-preview table tr:nth-child(2n) { background-color: rgb(50, 50, 50); }
+.markdown-preview table th, .markdown-preview table td { border-color: rgb(66, 66, 66); }
+.markdown-preview table th { background-color: rgb(60, 60, 60); }
+html.blue .markdown-preview a { color: rgb(33, 150, 243); }
+html.cyan .markdown-preview a { color: rgb(0, 188, 212); }
+html.green .markdown-preview a { color: rgb(139, 195, 74); }
+html.pink .markdown-preview a { color: rgb(233, 30, 99); }
+html.purple .markdown-preview a { color: rgb(130, 89, 203); }
+html.red .markdown-preview a { color: rgb(244, 67, 54); }
+html.teal .markdown-preview a { color: rgb(77, 182, 172); }
+html.white .markdown-preview a { color: rgb(196, 196, 196); }
+html.yellow .markdown-preview a { color: rgb(255, 235, 59); }
+html.orange .markdown-preview a { color: rgb(255, 152, 0); }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #282828;
+  color: rgba(245, 235, 198, 0.8);
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  background-color: #282828;
+  color: rgba(253, 244, 193, 0.67);
+}
+pre.editor-colors .gutter .line-number.cursor-line,
+.host .gutter .line-number.cursor-line {
+  background-color: #3c3836;
+  color: rgba(253, 244, 193, 0.67);
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection,
+.host .gutter .line-number.cursor-line-no-selection {
+  color: rgba(253, 244, 193, 0.67);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  color: #fabd2f;
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: #fabd2f;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: #444444;
+}
+pre.editor-colors .search-results .marker .region,
+.host .search-results .marker .region {
+  background-color: transparent;
+  border: #fabd2f;
+}
+pre.editor-colors .search-results .marker.current-result .region,
+.host .search-results .marker.current-result .region {
+  border: rgba(253, 244, 193, 0.67);
+}
+pre.editor-colors.is-focused .cursor,
+.host(.is-focused) .cursor {
+  border-color: #fcf9e3;
+}
+pre.editor-colors.is-focused .selection .region,
+.host(.is-focused) .selection .region {
+  background-color: #504945;
+}
+pre.editor-colors.is-focused .line-number.cursor-line-no-selection,
+pre.editor-colors.is-focused .line.cursor-line,
+.host(.is-focused) .line-number.cursor-line-no-selection,
+.host(.is-focused) .line.cursor-line {
+  background-color: #3c3836;
+}
+.list-group li:not(.list-nested-item).status-modified,
+.list-tree li:not(.list-nested-item).status-modified,
+.list-group li.list-nested-item.status-modified > .list-item,
+.list-tree li.list-nested-item.status-modified {
+  color: #ffbb1e;
+}
+.punctuation.definition.tag {
+  color: #83a598;
+}
+.punctuation.definition.entity {
+  color: #d3869b;
+}
+.constant {
+  color: #d3869b;
+}
+.entity {
+  color: #8ec07c;
+}
+.keyword.operator.comparison,
+.keyword.operator,
+.keyword.operator.symbolic,
+.keyword.operator.string,
+.keyword.operator.assignment,
+.keyword.operator.arithmetic,
+.keyword.operator.class,
+.keyword.operator.key,
+.keyword.operator.logical {
+  color: #fe8019;
+}
+.keyword,
+.keyword.operator.new,
+.keyword.other,
+.keyword.control {
+  color: #fa5c4b;
+}
+.storage {
+  color: #fa5c4b;
+}
+.string:not(.string.unquoted.old-plist:not(.string.unquoted.heredoc)),
+.string.unquoted.heredoc .string,
+.string .constant.character.escape {
+  color: #6ce75e;
+}
+.string.quoted.double.html .invalid.illegal.bad-ampersand.html {
+  color: #6ce75e;
+}
+.comment {
+  font-style: italic;
+  color: #928C86;
+}
+.string.regexp .constant.character.escape {
+  color: #6ce75e;
+}
+.support {
+  color: #fabd2f;
+}
+.misc {
+  color: #fdf3bf;
+}
+.variable {
+  color: ##61ff93;
+}
+.variable.language {
+  color: #fdf4c1;
+}
+.meta.function-call {
+  color: #fdf4c1;
+}
+.invalid {
+  color: #fdf4c1;
+  background-color: #932b1e;
+}
+.text .source,
+.string.unquoted.heredoc,
+.source .source {
+  color: #5ff546;
+}
+.string.quoted .source {
+  color: #6ce75e;
+}
+.string {
+  color: #6ce75e;
+}
+.support.constant {
+  color: #fabd2f;
+}
+.support.class {
+  color: #8ec07c;
+}
+.support.function.misc.postcss {
+  color: #ffeeb9;
+}
+.constant.other.color.rgb-value {
+  color: #83a598;
+}
+.constant.other.color.rgb-value .punctuation.definition {
+  color: inherit;
+}
+.meta.selector.css .entity.name.tag {
+  color: #fa5c4b;
+}
+.entity.name.tag {
+  color: #fa5c4b;
+}
+.entity.name.tag.html {
+  color: #8ec07c;
+}
+.meta.selector.css,
+.entity.other.attribute-name.id {
+  color: #6ce75e;
+}
+.meta.selector.css .entity.other.attribute-name.class {
+  color: #6ce75e;
+}
+.entity.other.attribute-name.placeholder.scss {
+  color: #d5859b;
+}
+.entity.other.attribute-name.placeholder.scss .punctuation.definition.entity.scss {
+  color: inherit;
+}
+.support.type.property-name.css,
+.support.type.property-name.sass,
+.support.type.property-name.scss,
+.support.type.property-name.postcss {
+  color: #8ec07c;
+}
+.meta.preprocessor.at-rule .keyword.control.at-rule {
+  color: #fabd2f;
+}
+.meta.property-value .constant {
+  color: #fabd2f;
+}
+.meta.property-value .support.constant.named-color.css {
+  color: #fe8019;
+}
+.meta.constructor.argument.css {
+  color: #fabd2f;
+}
+.meta.diff,
+.meta.diff.header {
+  color: #fdf4c1;
+  background-color: #83a598;
+}
+.markup.deleted {
+  color: #fdf4c1;
+  background-color: #fa5c4b;
+}
+.markup.changed {
+  color: #fdf4c1;
+  background-color: #fabd2f;
+}
+.markup.inserted {
+  color: #fdf4c1;
+  background-color: #8ec07c;
+}
+.markup.bold {
+  font-weight: bold;
+}
+.markup.italic {
+  font-style: italic;
+}
+.markup.heading {
+  font-weight: bold;
+  color: #8ec07c;
+}
+.entity.name.type.class.php {
+  color: #8ec07c;
+}
+.keyword.other.phpdoc {
+  color: #928374;
+}
+.constant.numeric.css,
+.keyword.other.unit.css {
+  color: #d3869b;
+}
+.punctuation.definition.entity.css,
+.punctuation.definition.entity.scss {
+  color: inherit;
+}
+.variable.language.js {
+  color: #fabd2f;
+}
+.storage.type.dired.item.directory,
+.dired.item.directory {
+  color: #8ec07c;
+}
+.entity.name.tag.block.any.html,
+.meta.tag.inline.any.html,
+.entity.name.tag.inline.any.html,
+.meta.tag.block.any.html {
+  color: #8ec07c;
+}
+.entity.other.attribute-name.html {
+  color: #6fa598;
+}
+.constant.character.entity.html,
+.punctuation.definition.entity.html {
+  color: #d5859b;
+}
+.string.quoted.double.html {
+  color: #6ce75e;
+}
+.entity.other.attribute-name.attribute.scss {
+  color: #CC6666;
+}
+pre.editor-colors .gutter .line-number.linter-warning .icon-right:before,
+.host .gutter .line-number.linter-warning .icon-right:before {
+  color: #e9c062;
+}
+pre.editor-colors .gutter .line-number.linter-error .icon-right:before,
+.host .gutter .line-number.linter-error .icon-right:before {
+  color: #cc6666;
+}
+pre.editor-colors .highlights .linter-warning .region,
+.host .highlights .linter-warning .region {
+  border: 1px solid #e9c062;
+  background-image: none;
+  background-color: rgba(255, 201, 76, 0.2);
+}
+pre.editor-colors .highlights .linter-error .region,
+.host .highlights .linter-error .region {
+  border: 1px solid #cc6666;
+  background-image: none;
+  background-color: rgba(255, 51, 51, 0.2);
+}
+.bracket-matcher .region {
+  border: 1px solid rgba(222, 149, 54, 0.4);
+  border-radius: 3px;
+  background-color: rgba(255, 217, 0, 0.2);
+  z-index: 100;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h2 id="-">组件文档</h2>
+<h3 id="apposebtn">apposeBtn</h3>
+<ul>
+<li>描述：并列按钮</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;ApposeBtn&nbsp;s_leftLabel=&quot;分享&quot;&nbsp;s_rightLabel=&quot;保存&quot;&nbsp;f_leftClick={this.leftHandler}&nbsp;f_rightClick={this.rightHandler}/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="blockbtn">blockBtn</h3>
+<ul>
+<li>描述：块状按钮</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;BlockBtn&nbsp;onClick={this.onClick}&nbsp;s_label=&quot;提交&quot;&nbsp;/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="blockinput">blockInput</h3>
+<ul>
+<li>描述：块状输入框，支持右侧带按钮</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>(带右侧按钮):&lt;BlockInput&nbsp;ref=&quot;codeInput&quot;&nbsp;s_placeholder=&quot;请输入验证码&quot;&nbsp;f_clickHandle={this.f_codeClickHandler}&nbsp;b_haveBtn={true}&nbsp;&nbsp;s_btnTxt=&quot;获取验证码&quot;/&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>(块状输入框):&lt;BlockInput&nbsp;ref=&quot;newMobileNum&quot;&nbsp;s_placeholder=&quot;请输入新的手机号码&quot;&nbsp;/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="bottomtap">bottomTap</h3>
+<ul>
+<li>描述：底部tab</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>BottomTap.create(function(index){alert(index)},[{s_label:&quot;首页&quot;,s_icon:require(&#39;shouye_1Img&#39;),s_activeIcon:require(&#39;shouyeImg&#39;)},{s_label:&quot;会员&quot;,s_icon:require(&#39;huiyuan_1Img&#39;),s_activeIcon:require(&#39;huiyuanImg&#39;)},{s_label:&quot;我的&quot;,s_icon:require(&#39;wode_1Img&#39;),s_activeIcon:require(&#39;wodeImg&#39;)}]);</span></span></span></div></pre></li>
+</ul>
+<h3 id="folditem">foldItem</h3>
+<ul>
+<li>描述：折叠Item</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;FoldItem&nbsp;key={index}&nbsp;o_params={{&quot;id&quot;:item.org_msg_id}}&nbsp;f_callBack={self.f_readyHander}&nbsp;i_state&nbsp;=&nbsp;{parseInt(item.is_readed)}&nbsp;s_title={item.content.slice(0,10)}&nbsp;s_content={item.content}&nbsp;/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="imageslider">imageSlider</h3>
+<ul>
+<li>描述：轮播组件</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;ImageSlider&nbsp;a_imageList={[url,url,url]}&nbsp;f_clickHandler={function(){}}/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="labelinput">labelInput</h3>
+<ul>
+<li>描述：文本输入组件（支持右侧右箭头，右侧文本按钮功能）</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;LabelInput&nbsp;s_left=&quot;密码：&quot;&nbsp;s_right=&quot;请输入您的密码&quot;&nbsp;b_isInput={true}&nbsp;s_inputType=&quot;password&quot;&nbsp;/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="loader">loader</h3>
+<ul>
+<li>描述：加载loading</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Loader.show();</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Loader.hide();</span></span></span></div></pre></li>
+</ul>
+<h3 id="scrollbottomcom">scrollBottomCom</h3>
+<ul>
+<li>描述：上拉刷新组件</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;scrollBottomCom&nbsp;f_scrollCallBack={function(el){alert(1)}}/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="tabbtngroup">tabBtnGroup</h3>
+<ul>
+<li>切换按钮组</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;TabBtnGroup&nbsp;f_callBack={clickHandler}&nbsp;a_controlItems={[&#39;item1&#39;,&#39;item2&#39;]}/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="toast">toast</h3>
+<ul>
+<li>toast提示</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Toast.show();</span></span></span></div></pre></li>
+</ul>
+<h3 id="topbar">topBar</h3>
+<ul>
+<li>顶部bar</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>TopBar.create(&#39;首页&#39;);</span></span></span></div></pre></li>
+</ul>
+<h3 id="radio">radio</h3>
+<ul>
+<li>radio组件</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;Radio&nbsp;radioTxt=&quot;黄钻级别&quot;&nbsp;s_value=&quot;1&quot;&nbsp;f_changeHandler={this.radioHandler}/&gt;</span></span></span></div></pre></li>
+</ul>
+<h3 id="radiolist">radioList</h3>
+<ul>
+<li>单选列表组件(图片+文字+单选)</li>
+<li>用法：<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;RadioList&nbsp;a_list={[{s_img:require(&#39;wxLogoImg&#39;),s_label:&quot;微信支付&quot;,b_default:true,s_value:&quot;1&quot;},{s_img:require(&#39;wxLogoImg&#39;),s_label:&quot;支付宝&quot;,s_value:&quot;2&quot;}]}/&gt;</span></span></span></div></pre></li>
+</ul></body>
+</html>

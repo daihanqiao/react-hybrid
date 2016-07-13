@@ -1,0 +1,47 @@
+.slider{
+	width: 100vw;
+	.js_frame{
+		position: relative;
+	    overflow: hidden;
+	    white-space: nowrap;
+	    width: 100vw;
+	    padding:0;
+	    background-color:#fff;
+		& > ul{
+			display: inline-block;
+		    padding:0;
+			& > li {
+				position: relative;
+			    display: inline-block;
+			    width: 100vw;
+			    padding:0;
+				& > img{
+					width:100%;
+				    height:auto;
+				}
+			}
+		}
+	}
+	.pagination{
+		width: 100%;
+		position: absolute;
+		left:0;
+		bottom:5px;
+		text-align: center;
+		z-index: 999;
+		.bullet{
+			display: inline-block;
+		    width: 10px;
+		    height: 10px;
+		    border-radius: 10px;
+		    background: #999;
+		    margin: 0 3px;
+		    cursor: pointer;
+		    opacity: 1;
+		    &.active{
+		    	background: #ff1f69;
+		    	opacity: 1;
+		    }
+		}
+	}
+}

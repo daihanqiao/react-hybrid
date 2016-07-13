@@ -1,0 +1,26 @@
+@import "../../base/css/globalStyle";
+.bottomTab{
+	width: 100%;
+	height: pxToRem($bottomTabHeight - 1);
+	border-top: 1px solid $gray-lighter;
+	background: #fff;
+	display: table;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	a{
+		display: table-cell;
+		text-align: center;
+		img{
+			width: pxToRem(30px);
+		}
+		span{
+			margin-top: -3px;
+			display: block;
+			font-size: pxToRem(14px);
+		}
+		&.active{
+			color:$mainColor;
+		}
+	}
+}

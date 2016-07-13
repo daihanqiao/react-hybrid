@@ -1,0 +1,49 @@
+@import '../../base/css/globalStyle';
+.labelInput{
+	font-size: pxToRem(15px);
+	div{
+		position: relative;
+	    overflow: hidden;
+	    padding: pxToRem(11px) pxToRem(15px);//11px 15px;
+		background-color: #fff;
+	    -webkit-touch-callout: none;
+	}
+    input{
+        width: 60%;
+    }
+	label{
+		min-width: 60px;
+		max-width:30%;
+		display: inline-block;
+	    color: $blackColor;
+        vertical-align: top;
+	}
+	span{
+		max-width:70%;
+		text-indent: 15px;
+		display: inline-block;
+		color: $gray-light; //#999;
+	}
+    img{
+        width: pxToRem(30px);
+        position: absolute;
+        top: 5px;
+        right:15px;
+    }
+    /*箭头*/
+	.iconRight:before{
+		content: "";
+	    position: absolute;
+	    right: 10px;
+	    top: 50%;
+	    margin-top: -8px;
+	    display: inline-block;
+	    width: pxToRem(9px);
+	    height: pxToRem(9px);
+	    border:1px solid #777;
+	    border-left:0;
+	    border-bottom: 0;
+	    -webkit-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	}
+}

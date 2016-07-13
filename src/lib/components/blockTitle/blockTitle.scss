@@ -1,0 +1,43 @@
+@import "../../base/css/globalStyle";
+.blockTitle{
+	background-color: #fff;
+	font-size: pxToRem(14px);
+	border-top: 1px solid $gray-lighter;
+	.content{
+		padding: pxToRem(10px);
+	 }
+	 .content-wrap{
+	 	overflow: hidden;
+	 	box-sizing:border-box;
+	 }
+	.title{
+		position: relative;
+		&::after{
+			left: 10px;
+		}
+		h3{
+			font-size: pxToRem(16px);
+			font-weight: normal;
+			color: $gray-dark;
+			padding: pxToRem(5px) 0;
+			padding-left: pxToRem(10px);
+			line-height: 25px;
+			position: relative;
+			&:before{
+				content: '';
+				display: block;
+				height:70%;
+				width:3px;
+				background:$mainColor;
+				position: absolute;
+				top:15%;
+				left:0;
+			}
+		}
+		.btn-more{
+			position: absolute;
+			top:2px;
+			right: 0;
+		}
+	}
+}

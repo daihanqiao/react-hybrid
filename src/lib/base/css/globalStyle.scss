@@ -1,0 +1,44 @@
+//主色调
+$mainColor: #337ab7;
+//通用颜色
+$whiteColor: #ffffff;
+$blackColor: #000000;
+
+//主色按钮颜色搭配
+$btn-main: $mainColor;  //背景色
+$btn-mainBorder: darken($mainColor,10%); //线色
+$btn-active: darken($mainColor,10%);   //active状态背景色
+$btn-activeBorder: darken($mainColor,5%);  //active线色
+
+//参考颜色
+/*
+$btn-success: #5cb85c;  //墨绿
+$btn-info:    #5bc0de;  //天空蓝
+$btn-warning: #f0ad4e;  //警号黄
+$btn-danger:  #d9534f;  //危险红
+*/
+
+/*透明*/
+$transparent: transparent;
+//灰色
+$gray-dark:    lighten($blackColor, 20%);   // #333
+$gray:         lighten($blackColor, 40%);   // #666
+$gray-light:   lighten($blackColor, 60%);   // #999
+$gray-blight:  lighten($blackColor, 80%);   // #ccc
+$gray-lighter: lighten($blackColor, 93.5%); // #eee
+//图片圆角
+$imgRadius: 5px;
+//边框圆角
+$borderRadius: 3px;
+//按钮圆角
+$btnRadius: 3px;
+//底部bottomTab高度
+$bottomTabHeight: 50px;
+
+
+//设计稿尺寸(5s——>32px)
+$baseSize:      32px !default;
+// px转rem
+@function pxToRem($px) {
+  @return $px / $baseSize * 1rem;
+}

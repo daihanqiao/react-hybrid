@@ -1,0 +1,63 @@
+@import '../../base/css/globalStyle';
+.actionSheet{
+    position: fixed;
+    bottom: -147px;
+    width: 100%;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    z-index: 200;
+    opacity: 0;
+    transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+    &.actionSheet-active{
+        opacity: 1;
+        bottom: 0;
+    };
+    ul{
+        margin: 8px;
+        text-align: center;
+        color: #007aff;
+        border-radius: 4px;
+        overflow: auto;
+        max-height: 300px;
+        background-color: #f7f7f7;
+        background-image: none;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+        padding-left: 0;
+        &:last-child{
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        &:first-child{
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        li{
+            position: relative;
+            overflow: hidden;
+            padding: 11px 15px;
+            font-size: pxToRem(14px);
+            &:last-of-type:after{
+                height: 0;
+            }
+        }
+    }
+}
+.actionSheet-active-bg{
+    opacity: 0;
+    -webkit-animation: actionSheet-opacity .2s linear forwards;
+    animation: actionSheet-opacity .2s linear forwards;
+}
+@-webkit-keyframes actionSheet-opacity
+{
+    0% {opacity: 0;}
+    100%{opacity: .3;}
+}
+
+@keyframes actionSheet-opacity
+{
+    0% {opacity: 0;}
+    100%{opacity: .3;}
+}

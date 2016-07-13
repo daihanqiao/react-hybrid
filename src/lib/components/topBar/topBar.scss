@@ -1,0 +1,45 @@
+/*顶部样式Bar*/
+.topBar{
+	.leftIcon,.rightIcon{
+		width: 50px;
+	    height: 44px;
+		img{
+			margin-top: 13px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.leftIcon{
+		display: inline-block;
+	}
+	.rightIcon{
+	    text-align: right;
+	}
+	.topTitle{
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 44px;
+		position: absolute;
+		padding: 0;
+		text-align: center;
+		white-space: nowrap;
+		color: #000;
+		right: 40px;
+		left: 40px;
+		display: inline-block;
+		width: auto;
+		margin: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.btn-link{
+		color: #999;
+		font-size: 14px;
+		line-height: 44px;
+		top: 0;
+		padding: 0;
+		border: 0;
+		background: transparent;
+	}
+}

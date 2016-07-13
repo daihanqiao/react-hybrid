@@ -1,0 +1,64 @@
+/*radio*/
+@import '../../base/css/globalStyle';
+.radio{
+    height: pxToRem(25px);
+    line-height: pxToRem(25px);
+    padding-left: pxToRem(30px);
+    .radioTag{
+        font-size: pxToRem(15px);
+    }
+    .radioWrap{
+        position:absolute;
+        left:0;
+        top:pxToRem(-2px);
+        .radioGroup{
+            width: pxToRem(25px);
+            height: pxToRem(25px);
+            background: #D8D8D8;
+            display:inline-block;
+            border-radius: 100%;
+            position: relative;
+            .circle {
+                display: block;
+                width: pxToRem(15px);
+                height: pxToRem(15px);
+                border-radius: 100%;
+                -webkit-transition: all .5s ease;
+                -moz-transition: all .5s ease;
+                -o-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                transition: all .5s ease;
+                cursor: pointer;
+                position: absolute;
+                top: pxToRem(5px);
+                left: pxToRem(5px);
+                z-index: 1;
+                background: #EFEFEF;
+                -webkit-box-shadow:inset 0px 0px 1px rgba(0,0,0,0.5) inset;
+                -moz-box-shadow:inset 0px 0px 1px rgba(0,0,0,0.5) inset;
+                box-shadow:inset 0px 0px 1px rgba(0,0,0,0.5) inset;
+                &:after{
+                    opacity: 0.1;
+                    content: '';
+                    position: absolute;
+                    width: pxToRem(20px);
+                    height: pxToRem(7px);
+                    background: transparent;
+                    top: pxToRem(-4px);
+                    left: 0px;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+            input[type=radio]:checked + label:after {
+                border: 3px solid #337ab7;
+                border-top: none;
+                border-right: none;
+                opacity: 1;
+            }
+        }
+    }
+}

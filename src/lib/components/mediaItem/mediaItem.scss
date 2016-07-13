@@ -1,0 +1,35 @@
+/*图片列表组件*/
+@import '../../base/css/globalStyle';
+.mediaItem{
+	position: relative;
+    padding: 10px 15px;
+    overflow: hidden;
+    background-color: inherit;
+    -webkit-touch-callout: none;
+    background: #fff;
+	&:last-of-type:after{
+		height: 0;
+	}
+    a{
+    	position: relative;
+	    display: block;
+	    padding: inherit;
+	    margin: -10px -15px;
+	    overflow: hidden;
+	    color: inherit;
+	    white-space: nowrap;
+    }
+    .mediaItem-img{
+		max-width: pxToRem(24px);
+		height: pxToRem(24px);
+		line-height: pxToRem(24px);
+	}
+	.mediaItem-body{
+		padding-left: pxToRem(10px);
+		line-height: pxToRem(24px);
+		overflow: hidden;
+		span{
+			font-size: pxToRem(14px);
+		}
+	}
+}

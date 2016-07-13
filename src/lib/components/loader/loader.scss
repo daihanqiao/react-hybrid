@@ -1,0 +1,75 @@
+/*
+* @Author: Administrator
+* @Date:   2015-12-06 15:45:15
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-12-21 17:56:41
+* 加载loading样式
+*/
+.loader{
+    position: fixed;
+    left:0;
+    top:0;
+	.loader-bg{
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    left:0;
+	    top:0;
+	    background-color: rgba(0,0,0,.3);
+	}
+	.loader-fixed{
+	    width: 65px;
+	    height: 65px;
+	    position:fixed;
+	    left:50%;
+	    top:50%;
+	    -webkit-transform: translate(-50%,-50%);
+	    transform: translate(-50%,-50%);
+		img{
+		    width: 65px;
+		}
+	}
+	.fixedImg{
+	    position:absolute;
+	    left:0;
+	    top:0;
+	    z-index: 10;
+	}
+	.fixedRotate{
+	     position:absolute;
+	    left:0;
+	    top:0;
+	    z-index: 9;
+	    animation: rotate 1s linear infinite;
+	    -webkit-animation: rotate 1s linear infinite;
+	}
+	@keyframes rotate {
+	    0% {
+	        -webkit-transform: rotate(0);
+	        transform: rotate(0);
+	    }
+	    50% {
+	        -webkit-transform: rotate(-180deg);
+	        transform: rotate(-180deg)
+	    }
+	    100% {
+	        -webkit-transform: rotate(-360deg);
+	        transform: rotate(-360deg)
+	    }
+	}
+	@-webkit-keyframes rotate {
+	    0% {
+	        -webkit-transform: rotate(0);
+	        transform: rotate(0);
+	    }
+	    50% {
+	        -webkit-transform: rotate(-180deg);
+	        transform: rotate(-180deg)
+	    }
+
+	    100% {
+	        -webkit-transform: rotate(-360deg);
+	        transform: rotate(-360deg)
+	    }
+	}
+}

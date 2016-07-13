@@ -1,0 +1,26 @@
+@import "../../base/css/globalStyle";
+.blockInput{
+	padding: pxToRem(10px);
+	.base-btn{
+        width: 29%;
+        height: pxToRem(33px);
+        padding: 6px 10px;
+        font-size: pxToRem(13px);
+        float: right;
+        box-sizing: border-box;
+    }
+    .noBtnStyle,.haveBtnStyle{
+        border:1px solid $gray-lighter;
+        border-radius: $borderRadius;
+        box-sizing: border-box;
+        height: pxToRem(33px);
+        font-size: pxToRem(15px);
+    }
+    .haveBtnStyle{
+        width: 70%;
+    }
+    .noBtnStyle{
+    	width: 100%;
+        margin-bottom:0;
+    }
+}

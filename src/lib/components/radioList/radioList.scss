@@ -1,0 +1,24 @@
+@import "../../base/css/globalStyle";
+.radioList{
+    li{
+        padding:10px 10px;
+        position: relative;
+        .itemImg{
+            width: pxToRem(24px);
+            height: pxToRem(24px);
+            vertical-align: middle;
+        }
+        .itemLabel{
+            margin-left: pxToRem(10px);
+            font-size: pxToRem(14px);
+            height: pxToRem(24px);
+            line-height: pxToRem(24px);
+            vertical-align: middle;
+        }
+        .radio{
+            position:absolute;
+            right:10px;
+            top:10px;
+        }
+    }
+}

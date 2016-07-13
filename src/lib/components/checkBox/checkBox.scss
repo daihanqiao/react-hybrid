@@ -1,0 +1,58 @@
+/*checkbox*/
+@import "../../base/css/globalStyle";
+.checkBox{
+	min-height: pxToRem(25px);
+	line-height: pxToRem(25px);
+	padding-left: pxToRem(25px);
+	margin-right: pxToRem(5px);
+	position: relative;
+	display: inline-block;
+    span{
+    	font-size: pxToRem(14px);
+    }
+    .warp{
+    	position: absolute;
+        left: 0px;
+        top: pxToRem(2px);
+        .box{
+            width: pxToRem(25px);
+            position: relative;
+            display:inline-block;
+            label{
+                cursor: pointer;
+                position: absolute;
+                width: pxToRem(20px);
+                height: pxToRem(20px);
+                top: pxToRem(-17px);
+                left: 0;
+                background: #eee;
+                border:solid 1px #AEAEAE;
+                border-radius :5px;
+                &:after{
+                    opacity: 0.1;
+                    content: '';
+                    position: absolute;
+                    width: pxToRem(9px);
+                    height: pxToRem(5px);
+                    background: transparent;
+                    top: pxToRem(4px);
+                    left: pxToRem(4px);
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+            input[type=checkbox]:checked + label{
+                border: 1px solid $mainColor;
+                &:after{
+                    border: 3px solid $mainColor;
+                    border-top: none;
+                    border-right: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

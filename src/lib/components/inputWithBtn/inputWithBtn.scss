@@ -1,0 +1,96 @@
+@import '../../base/css/globalStyle';
+.inputWithBtn{
+	font-size: pxToRem(15px);
+	div{
+		position: relative;
+	    overflow: hidden;
+	    padding: pxToRem(11px) pxToRem(15px);//11px 15px;
+		background-color: #fff;
+	    -webkit-touch-callout: none;
+	}
+
+	label,.winInput,input[type='button']{
+		height: pxToRem(33px);
+	}
+	label{
+		min-width: 60px;
+		max-width:30%;
+		line-height: pxToRem(33px);
+		display: inline-block;
+	    color: $blackColor; //#000;
+	}
+	input:not([type='button']){
+		width: 40%;
+		box-sizing: border-box;
+		font-size: pxToRem(13px);
+	}
+	input[type='button']{
+		float:right;
+		width: 29%;
+		border:none;
+		color:$mainColor;
+	}
+	// span{
+	// 	max-width:70%;
+	// 	text-indent: 15px;
+	// 	display: inline-block;
+	// 	color: $gray-light; //#999;
+	// }
+	// .labelValidateCode{
+	// 	input[type='text'],
+	// 	input[type='search'],
+	// 	input[type='password'],
+	// 	input[type='datetime'],
+	// 	input[type='datetime-local'],
+	// 	input[type='date'],
+	// 	input[type='month'],
+	// 	input[type='time'],
+	// 	input[type='week'],
+	// 	input[type='number'],
+	// 	input[type='email'],
+	// 	input[type='url'],
+	// 	input[type='tel'],
+	// 	input[type='color']{
+	// 		width: 40%;
+	// 	}
+	// 	input[type=button]{
+	// 		padding: pxToRem(1px) pxToRem(12px); //1px 12px;
+	// 		float: right;
+	// 		border:0;
+	// 		background-color: transparent;
+	// 		color: #008aff;
+	// 		&:active{
+	// 			color: #004085;
+	// 		}
+	// 	}
+	// }
+	// .before{
+	// 	&::before{
+	// 		position: absolute;
+	// 	    right: 0;
+	// 	    bottom: 0;
+	// 	    left: 15px;
+	// 	    height: 1px;
+	// 	    content: '';
+	// 	    background-color: #c8c7cc;
+	// 	    -webkit-transform: scaleY(.5);
+	// 	    transform: scaleY(.5);
+	// 	}
+	// }
+	// .after{
+	// 	&::after {
+	// 		content: "";
+	// 		width: 10px;
+	// 		height: 10px;
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		right:10px;
+	// 		border-top:1px solid $gray-blight;
+	// 		border-bottom:1px solid transparent;
+	// 		border-left:1px solid transparent;
+	// 		border-right:1px solid $gray-blight;
+	// 		-webkit-transform: translateY(-50%) rotate(45deg);
+	// 	    transform: translateY(-50%) rotate(45deg);
+	// 	}
+	// }
+}
