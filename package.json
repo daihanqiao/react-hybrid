@@ -1,7 +1,7 @@
 {
   "name": "react-hybrid",
   "version": "1.0.0",
-  "description": "APP",
+  "description": "基于react的混合APP，同时输出ios，android，wap应用",
   "main": "webpack.config.js",
   "dependencies": {},
   "devDependencies": {
@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:daihanqiao/react-hybrid.git"
   },
   "keywords": [
     "react","hybrid","webpack","apicloud"
