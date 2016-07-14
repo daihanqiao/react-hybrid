@@ -47,7 +47,7 @@
 	/* WEBPACK VAR INJECTION */(function(Com, React, ReactDOM) {'use strict';
 	Com.ready(function(){
 	    var TopBar = __webpack_require__(195);
-	    TopBar.create("首页",{});
+	    TopBar.create("example",{});
 	    __webpack_require__(199);
 	    var ActionSheet = __webpack_require__(201);
 	    var ApposeBtn = __webpack_require__(205);

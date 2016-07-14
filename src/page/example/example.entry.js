@@ -1,7 +1,7 @@
 'use strict';
 Com.ready(function(){
     var TopBar = require('topBar');
-    TopBar.create("首页",{});
+    TopBar.create("example",{});
     require("exampleCss");
     var ActionSheet = require('actionSheet');
     var ApposeBtn = require('apposeBtn');

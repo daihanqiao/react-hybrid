@@ -105,7 +105,7 @@ var plugins = [
     new WebpackShellPlugin({
     //   onBuildStart: ['echo "BuildStarting"'],
     //   onBuildEnd: ['echo "BuildEnding"']
-      onBuildExit: ['node .\\bin\\buildHtml.js']
+      onBuildExit: ['node ./bin/buildHtml.js']
     }),
 ];
 if(isRelease){

@@ -29,9 +29,9 @@
     "dev": "set NODE_ENV=dev&webpack --progress --colors&echo 'dev'",
     "release": "set NODE_ENV=release&webpack -p --progress --colors&echo 'release'",
     "watch": "set NODE_ENV=dev&webpack --progress --colors -w&echo 'watch'",
-    "page": "set NODE_PAGE=page&node .\\bin\\createPage.js",
+    "page": "set NODE_PAGE=page&node ./bin/createPage.js",
     "release-gzip": "set NODE_ENV=release&set NODE_GZIP=1&webpack -p --progress --colors&echo 'release-gzip'",
-    "release-app": "set NODE_ENV=release&set NODE_APP=1&webpack -p --progress --colors&echo 'release-app'&node .\\bin\\copyFiles.js"
+    "release-app": "set NODE_ENV=release&set NODE_APP=1&webpack -p --progress --colors&echo 'release-app'&node ./bin/copyFiles.js",
   },
   "repository": {
     "type": "git",

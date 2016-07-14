@@ -6,7 +6,7 @@
 
 ## 使用
 ### 安装依赖库
-运行环境：Windows，（Linux和Mac需要修改package.json下scripts中设置环境变量的命令如：`set NODE_ENV=release`=>`env NODE_ENV=release`，以及脚本路径`\\`=>`/`
+运行环境：Windows，（Linux和Mac需要修改package.json下scripts中设置环境变量的命令如：`set NODE_ENV=release`=>`env NODE_ENV=release`
 
 安装：nodejs
 
