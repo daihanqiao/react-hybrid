@@ -9,7 +9,6 @@ var fs = require('fs');
 var param0 = JSON.parse(process.env.npm_config_argv).remain[0] || "";
 //参数1
 var param1 = JSON.parse(process.env.npm_config_argv).remain[1] || "";
-console.log(process.env.NODE_ENV+'测试测试测试');
 //是否为数字的正则
 var numRe = new RegExp(/^(\d+)$/);
 var com = {

@@ -56,6 +56,14 @@
 
 命令运行成功后，会在page目录下生成`user_login`目录，包含`user_login.entry.js` ，`user_login.html`，`user_login.scss`
 
+### 资源引用
+规则：**约定大于配置**，项目相关文件放于`src/general/common/`对应目录，引用资源文件时无需文件路径及文件类型，约定如下：
+> **js文件**：`var Js = require('fileName')`
+
+> **css，scss文件**：`require('fileNameCss')`
+
+> **图片文件**：`require('fileNameImg')`
+
 ### 项目调试
 运行命令：`npm run watch`
 
